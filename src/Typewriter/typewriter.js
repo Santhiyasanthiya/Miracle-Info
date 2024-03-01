@@ -5,7 +5,7 @@ function TypeWriter() {
   return (
     <Typewriter
       options={{
-        strings: ["providing B2C and B2B software services", "ICD 10 CM, CPT, HCPCS code sets and Education"],
+        strings: ["A company to connect PEOPLE","AI/AR . . ."],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,

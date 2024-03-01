@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { navbar_name } from '../../portfolio';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import './Agustina.woff'
+// import './Agustina.woff'
 
 
 function Navbar() {
@@ -20,7 +20,7 @@ function Navbar() {
     <div>
       <nav className="navbarX sticky">
         <a href="" className="navbar-logoX" onClick={closeMobileMenu}>
-          {navbar_name}
+         <img className='nav-logo' src={navbar_name} /> 
         </a>
         <div className="menu-iconX" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -38,15 +38,7 @@ function Navbar() {
        
         
 
-     <li className="nav-itemX">
-            <Link
-              to="/"
-              className="nav-linksX"
-              onClick={() => closeMobileMenu("#aboutme")}
-            >
-              About
-            </Link>
-          </li>
+   
           <li className="nav-itemX">
             <Link
               to="/"
@@ -86,6 +78,17 @@ function Navbar() {
            AI/AR
           </Link>
         </li>
+
+        <li className="nav-itemX">
+        <Link
+          to="/"
+          className="nav-linksX"
+          onClick={() => closeMobileMenu("#aboutme")}
+        >
+          About
+        </Link>
+      </li>
+
           <li className="nav-itemX">
             <Link
               to="/"

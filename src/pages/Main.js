@@ -14,15 +14,18 @@ function Main() {
             <div className="col-lg-6 ">
               <div className="mobile">
                 <h1 className="main-title n" id="name">
-                Miracle info Soft
-                  <h3 className="type-writer"><TypeWriter /></h3>
-                </h1>
-                <h1 className="main-title d">{main.doamin}</h1>
+              <span style={{color:"orange"}}>Alphaingen</span>  <span style={{color:"white"}}>Technologies</span>
+
+              <h3 className="type-writer"><TypeWriter /></h3>
+              </h1>
+
               
               </div>
+              <Coder />
             </div>
+          
             <div className="col-lg-5 ani">
-            <Coder />
+          
             </div>
           </div>
         </Zoom>

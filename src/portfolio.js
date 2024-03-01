@@ -1,27 +1,30 @@
 import BookMyShow from "./Assets/BookMyShow.jpg"
 import Diary from "./Assets/diary.png"
 import Money from "./Assets/money.png"
-import email from "./Assets/email.png"
+import logo from "./Assets/logo.png"
 import Redux from "./Assets/redux.png"
 
 //I Would Highly Recommend You To Customize The Theme According To Your Taste.
 export const globalStyles = {
+  
 
-    "--grad": "linear-gradient(315deg,#48a9fe,#00cdac)", // Use gradients only
+    "--grad": "linear-gradient(315deg, rgba(12, 19, 54, 0.8), rgba(10, 205, 222, 0.8))", // Use gradients only
     // "--grad": "linear-gradient(315deg, #48a9fe 0%, #734ae8 74%)", // Use gradients only
     // "--grad": "linear-gradient(315deg, #06bcfb 0%, #4884ee 74%)",
-    "--txtcolor": "#272341",
+    // "--grad": ' linear-gradient(blue,purple)',
+  '--b_color':"red",
+ "--txtcolor": "#272341",
     "--p_color": "#00cdac",
     "--s_color": "#fff"
 }
 
 // Navigation Bar Name
-export const navbar_name = "miracle-info"
+export const navbar_name = logo
 
 // Main Page
 export const main = {
-    name: "Miracle-infoSoft",
-    doamin: "A company to connect Human to Humanoids and healthcare Tech",
+    name: "Alphaingen-Technology",
+    doamin: "A company to connect people with humanoids",
    
 }
 

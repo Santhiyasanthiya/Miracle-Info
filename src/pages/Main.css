@@ -9,12 +9,13 @@ div.mobile {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 3.2rem;
-  color: var(--txtcolor);
+  /* color: var(--txtcolor); */
+  color: white;
 }
 
 .main-title {
   font-size: 35px;
-  color: var(--txtcolor);
+  /* color: var(--txtcolor); */
   margin-bottom: 0;
   padding-top: 0;
   text-align: left;
@@ -35,11 +36,7 @@ div.mobile {
 .n {
   padding-bottom: 15px;
 }
-#name {
-  background: var(--grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 .ani {
   margin-top: 30px;

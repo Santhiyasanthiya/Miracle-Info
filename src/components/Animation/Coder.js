@@ -6,8 +6,7 @@ const Coder = () => {
 
     return (
         <div>
-            <LottieAnimation lotti={home} autoplay
-                loop />
+             <LottieAnimation lotti={home} autoplay loop />
         </div>
     )
 }
