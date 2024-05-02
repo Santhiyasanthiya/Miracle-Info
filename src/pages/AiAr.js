@@ -1,6 +1,6 @@
 import React from "react";
 import { AIAR } from "../portfolio";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import "./AiAr.css";
 
 const AiAr = () => {
@@ -11,21 +11,23 @@ const AiAr = () => {
       AI and AR
       </Fade>
     </h1>
-    <div className="fluid-container">
+    <div className="container">
       <div className="row">
-        <Fade left cascade duration={1500}>
-          <div className="col-lg-5 col-md-5 image">
-            <img
-              className="aboutme-img"
-              // height="250"
+      <div className="col-md-4">
+        <Fade bottom cascade duration={1500}>
+          
+            <img style={{marginTop:"-20px"}}
+            className="aboutme-img img-fluid"
+              height="250"
               width="400"
               src='https://www.psychiatrist.com/wp-content/uploads/2023/06/AI.gif'alt="profile pic"
             />
-          </div>
+        
         </Fade>
-        <Fade bottom cascade duration={1500}>
-          <div className="col-lg-7 col-md-7 text">
-           
+        </div>
+       
+          <div className=" col-md-6 ">
+          <Fade bottom cascade duration={1500}>
             <ul>
             <li>{AIAR.p1}</li>
             <li>{AIAR.p2}</li>
@@ -33,8 +35,9 @@ const AiAr = () => {
             <li>{AIAR.p4}</li>
           
             </ul>
+            </Fade>
           </div>
-        </Fade>
+      
       </div>
     </div>
   </section>

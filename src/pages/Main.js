@@ -1,6 +1,6 @@
 import React from "react";
 import Coder from "../components/Animation/Coder";
-import Zoom from "react-reveal/Zoom";
+import { Zoom } from "react-awesome-reveal"
 import { main } from "../portfolio";
 import TypeWriter from "../Typewriter/typewriter";
 import "./Main.css";

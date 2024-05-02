@@ -30,11 +30,11 @@ function App() {
     <div>
     <Navbar />
     <Main />   
-      <Aboutme />
       <Whatido />
       <Healthcare/>
       <InformationTech />
       <AiAr />
+      <Aboutme />
       <Contact />
     </div>
    

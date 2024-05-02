@@ -1,7 +1,7 @@
 import BookMyShow from "./Assets/BookMyShow.jpg"
 import Diary from "./Assets/diary.png"
 import Money from "./Assets/money.png"
-import logo from "./Assets/logo.png"
+import logo from "./Assets/alphalogo.png"
 import Redux from "./Assets/redux.png"
 
 //I Would Highly Recommend You To Customize The Theme According To Your Taste.
@@ -28,19 +28,14 @@ export const main = {
    
 }
 
-// AboutMe
-export const aboutme = { 
-    p1: "We started our organization in 2024. ",
-    p2: "Our IT and AI sector here to provide connectivity to humans from Humanoids. Our products produced based on artificial intelligence and AR technology. ",
-    p3:"Our Healthcare sector here to provide extensive training to the right candidates about US Medical billing and coding services ",
-    p4:"We are providing end to end RCM services for our clients. ",
-}
+
 
 export const vision = { 
     p1: "AI Sector-Stay connected Humans with Humanoids and Robotic tech world. ",
-    p2: "Healthcare Sector  To create knowledgeable and suitable candidates for medical coding and billing services.",
+    p2: "IT Sector B2B and B2C services with low cost.  ",
     p3:"To deliver effective end to end RCM services with low cost by include the AI tech. ",
-    p4:"IT Sector B2B and B2C services with low cost.",
+    p4:"Healthcare Sector  To create knowledgeable and suitable candidates for medical coding and billing services.",
+
 }
 
 
@@ -65,12 +60,16 @@ export const AIAR = {
     p4:"We make a small robot which is replace the daily works with less cost."
 }
 
-// Project Details
-const book =  BookMyShow;
-const diary = Diary;
-const money = Money;
-const redux = Redux;
+// AboutMe
+export const aboutme = { 
+    p1: "We started our organization in 2024. ",
+    p2: "Our IT and AI sector here to provide connectivity to humans from Humanoids. Our products produced based on artificial intelligence and AR technology. ",
+    p3:"Our Healthcare sector here to provide extensive training to the right candidates about US Medical billing and coding services ",
+    p4:"We are providing end to end RCM services for our clients. ",
+}
 
+
+// Project Details
 
 
 // Social Media Links

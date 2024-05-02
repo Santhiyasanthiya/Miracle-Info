@@ -1,80 +1,84 @@
-.contact-title {
-  /* color: #272341 !important; */
-  font-size: 50px;
-  color:rgb(90, 241, 70);
-  text-shadow: 2px 2px 4px #b90707;
-  }
 
+.footer {
+  background: linear-gradient(349deg, #00013d, #8f548b, #714400, #3a4636);
+  background-size: 800% 800%;
 
-.address{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: rgb(212, 201, 201);
-  margin: 50px auto;
-font-weight:bold;
-letter-spacing: 0.1rem;
-  width: 250px;
-
-}
-
-.icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
-  /* color: red; */
-}
-.phone{
-  font-size: 45px;
-}
-hr.style-f {
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgb(243, 12, 12);
-  border-bottom: 1px solid rgb(3, 242, 19);
-  width: 80%;
-  margin-bottom: 50px;
-}
-
-p.copyright {
-  color: black;
+  -webkit-animation: AnimationName 35s ease infinite;
+  -moz-animation: AnimationName 35s ease infinite;
+  -o-animation: AnimationName 35s ease infinite;
+  animation: AnimationName 35s ease infinite;
+  color: #fff;
+  font-size: 20px;
+  padding: 30px 0;
+  border-radius: 80px 2px 80px 4px;
   text-align: center;
-  font-size: 15px;
-  padding-bottom: 50px;
 }
-#emailPhone{
-  margin-top:40px;
-  color: black;
+
+.contact-info{
+  text-align: center;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:48% 0%}
+  50%{background-position:53% 100%}
+  100%{background-position:48% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:48% 0%}
+  50%{background-position:53% 100%}
+  100%{background-position:48% 0%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:48% 0%}
+  50%{background-position:53% 100%}
+  100%{background-position:48% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:48% 0%}
+  50%{background-position:53% 100%}
+  100%{background-position:48% 0%}
+}
+
+
+
+
+
+
+.footer-content h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 5%;
+/* margin-left: 50%; */
+}
+
+.footer-content .contact-info {
   display: flex;
-  gap: 15%;
-  justify-content:center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  /* margin-left: 40%; */
 }
-#emailPhone a {
-  color: black;
+
+p{
+  margin-bottom: 0%;
 }
-@media (max-width: 600px) {
-  .contact-title {
-    font-size: 35px;
-    margin-bottom: 50px;
-  }
-  hr.style-f {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  .icon {
-    display: grid;
-    grid-template-columns: repeat(3,20%);
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  #emailPhone{
-    margin-top:40px;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 20%;
-    justify-content:center;
+
+/* .testing-center{
+  text-align: center;
+} */
+
+.container-contact{
+  text-align: center;
+}
+
+.footer-content .icon {
+  text-align: center;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    text-align: center;
   }
 }

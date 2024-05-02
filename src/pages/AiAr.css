@@ -3,6 +3,10 @@
     /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
   }
   
+  .rowContainer{
+    display: flex;
+    padding: 100px;
+  }
   .aboutme {
     margin-top: 72px;
     z-index: 1;
@@ -34,8 +38,10 @@
   }
   
   .text {
-    padding: 50px 100px 100px 0;
+    
     font-size: larger;
+    width: 80%;
+  
   }
   
   p {

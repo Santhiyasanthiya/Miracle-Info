@@ -20,7 +20,7 @@ function Navbar() {
     <div>
       <nav className="navbarX sticky">
         <a href="" className="navbar-logoX" onClick={closeMobileMenu}>
-         <img className='nav-logo' src={navbar_name} /> 
+        <img className='nav-logo' src={navbar_name} /> 
         </a>
         <div className="menu-iconX" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -75,7 +75,7 @@ function Navbar() {
             className="nav-linksX"
             onClick={() => closeMobileMenu("#aiar")}
           >
-           AI/AR
+           AI&AR
           </Link>
         </li>
 

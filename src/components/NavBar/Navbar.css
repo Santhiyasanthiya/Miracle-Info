@@ -21,7 +21,7 @@
 .nav-logo{
   max-width: 75px;
   border-radius: 45%;
-  background: linear-gradient(rgb(249, 246, 246),rgb(131, 131, 254));
+  /* background: linear-gradient(rgb(249, 246, 246),rgb(131, 131, 254)); */
 }
 
 div .navbar-logoX {

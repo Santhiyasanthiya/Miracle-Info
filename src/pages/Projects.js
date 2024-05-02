@@ -1,7 +1,7 @@
 import React from 'react';
 import { details } from '../portfolio';
 import Project from './Project/Project';
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal"
 import "./Projects.css"
 
 const Projects = () => {

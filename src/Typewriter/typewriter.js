@@ -3,14 +3,16 @@ import Typewriter from "typewriter-effect";
 
 function TypeWriter() {
   return (
-    <Typewriter
+    <div style={{color:"white"}}>
+    <Typewriter 
       options={{
-        strings: ["A company to connect PEOPLE","AI/AR . . ."],
+        strings: ["A company to connect PEOPLE "],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
       }}
     />
+    </div>
   );
 }
 
