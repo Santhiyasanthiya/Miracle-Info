@@ -40,9 +40,9 @@ export const vision = {
 
 
 export const HealthCare = { 
-    p1:"We are providing extensive training on medical coding and billing by teaching ICD 10 CM, CPT, HCPCS code sets and Education.",
-    p2:"We are providing Specialty coding training. ",
-    p3:"We are here to solve the critical part of coding doubts and minimize the denial rate for accurate billing.",
+    // p1:"We are providing extensive training on medical coding and billing by teaching ICD 10 CM, CPT, HCPCS code sets and Education.",
+    // p2:"We are providing Specialty coding training. ",
+    p3:"We are here to solve the critical part of coding issue and minimize the denial rate for accurate billing.",
     p4:"We are providing End to End US RCM services.",
     p5:"We also focusing Automation in RCM which is the boom of healthcare in few years."
 }
@@ -64,8 +64,8 @@ export const AIAR = {
 export const aboutme = { 
     p1: "We started our organization in 2024. ",
     p2: "Our IT and AI sector here to provide connectivity to humans from Humanoids. Our products produced based on artificial intelligence and AR technology. ",
-    p3:"Our Healthcare sector here to provide extensive training to the right candidates about US Medical billing and coding services ",
-    p4:"We are providing end to end RCM services for our clients. ",
+    p3:"Our Healthcare sector providing end to end RCM services for our clients.",
+
 }
 
 

@@ -28,8 +28,7 @@ const Healthcare = () => {
         <Fade bottom cascade duration={1500} className="text-container">
   
             <ul class="text">
-                <li>{HealthCare.p1}</li>
-                <li>{HealthCare.p2}</li>
+    
                 <li>{HealthCare.p3}</li>
                 <li>{HealthCare.p4}</li>
                 <li>{HealthCare.p5}</li>

@@ -17,7 +17,7 @@ function Aboutme() {
           
             <div className=" col-md-6 ">
             <Fade left cascade duration={1500}> 
-            <img style={{marginLeft:"30px", }}
+            <img style={{marginLeft:"10px", }}
                 className="aboutme-img"
                 height="300"
                 width="400"
@@ -32,7 +32,7 @@ function Aboutme() {
               <li>{aboutme.p1}</li>
               <li>{aboutme.p2}</li>
               <li>{aboutme.p3}</li>
-              <li>{aboutme.p4}</li>
+           
             
               </ul>
            
