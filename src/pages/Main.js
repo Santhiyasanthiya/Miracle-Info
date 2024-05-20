@@ -14,7 +14,7 @@ function Main() {
             <div className="col-lg-6 ">
               <div className="mobile">
                 <h1 className="main-title n" id="name">
-              <span style={{color:"orange"}}>Alphaingen</span>  <span style={{color:"white"}}>Technologies</span>
+              <span style={{color:"orange"}}>Alphaingen</span>  <span style={{color:"white"}}>Technology</span>
 
               <h3 className="type-writer"><TypeWriter /></h3>
               </h1>
