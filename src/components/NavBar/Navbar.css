@@ -122,14 +122,17 @@ nav .nav-linksX:hover {
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
+    
   }
 
   .nav-menuX.activeX {
-    background: #242222;
+    background: orange;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
+    height: 100vh;
+ 
   }
 
   .nav-linksX {
@@ -142,6 +145,7 @@ nav .nav-linksX:hover {
   .nav-linksX:hover {
     background-color: var(--p_color);
     border-radius: 0;
+    width: 300px;
   }
 
   .navbar-logoX {

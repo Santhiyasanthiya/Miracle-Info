@@ -22,22 +22,20 @@ const InformationTech = () => {
               </ul>
             </Fade>
           </div>
-
-      
-            <div className="col-md-4">
-            <Fade left cascade duration={1500}>
-              <img style={{marginTop:"-20px", }}
-                className="aboutme-img"
-                height="300"
-                width="400"
+         
+          <div className=" col-md-4 ">
+            <Fade left cascade duration={1500} className="image-container">
+              <img
+                style={{ marginTop: "-15px"}}
+                className="aboutme-img img-fluid"
                 src="https://qph.cf2.quoracdn.net/main-qimg-a569c70550883dc678dfdf65d4561277"
                 alt="profile pic"
               />
-        
-          </Fade>
+            </Fade>
           </div>
         </div>
-      </div>
+        </div>
+      
     </section>
   );
 };
