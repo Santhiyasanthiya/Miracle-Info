@@ -7,7 +7,7 @@ function Aboutme() {
   return (
     <section className="aboutme" id="aboutme">
       <h1 className="title">
-        <Fade bottom cascade>
+        <Fade bottom cascade duration={500}>
           About Us
         </Fade>
       </h1>

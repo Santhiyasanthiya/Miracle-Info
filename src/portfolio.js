@@ -1,8 +1,6 @@
-import BookMyShow from "./Assets/BookMyShow.jpg"
-import Diary from "./Assets/diary.png"
-import Money from "./Assets/money.png"
+
 import logo from "./Assets/alphalogo.png"
-import Redux from "./Assets/redux.png"
+
 
 //I Would Highly Recommend You To Customize The Theme According To Your Taste.
 export const globalStyles = {

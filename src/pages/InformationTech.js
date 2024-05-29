@@ -2,15 +2,23 @@ import React from "react";
 import { InformationAI } from "../portfolio";
 import { Fade } from "react-awesome-reveal";
 import "./InformationTech.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Assuming you're using Font Awesome for icons
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'; // Assuming you're using Font Awesome for icons
+
 
 const InformationTech = () => {
   return (
     <section className="aboutme" id="infotech">
-      <h1 className="title text-align-center">
-        <Fade bottom cascade>
-          Information Technology
+    <div className="row">
+     
+          <h1 className="title text-center">
+          <Fade bottom cascade duration={800}>
+          Info Techno
         </Fade>
-      </h1>
+          
+          </h1>
+        </div>
+  
       <div className="container">
         <div className="row">
           <div className="col-md-6">

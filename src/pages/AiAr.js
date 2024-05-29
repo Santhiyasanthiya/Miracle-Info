@@ -7,7 +7,7 @@ const AiAr = () => {
   return (
     <section className="aboutme" id="aiar">
     <h1 className="title">
-      <Fade bottom cascade>
+      <Fade bottom cascade duration={500}>
       AI and AR
       </Fade>
     </h1>

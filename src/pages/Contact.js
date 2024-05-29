@@ -5,15 +5,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import './contact.css'; 
 import { links } from '../portfolio';
+import { Fade } from 'react-awesome-reveal';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="Contact">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
             <div className="footer-content">
-              <h2>Contact Us</h2>
+
+            <Fade bottom cascade duration={500}>
+            <h2>Contact Us</h2>
+            </Fade>
+             
+
+
               <div className='container-contact'>
               <div className="contact-info">
                 <FontAwesomeIcon icon={faEnvelope} className="icon" />

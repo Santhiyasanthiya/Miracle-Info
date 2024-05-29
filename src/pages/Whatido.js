@@ -7,12 +7,20 @@ const Whatido = () => {
   return (
     <section className="aboutme" id="whatido">
     
-        <Fade bottom cascade>
-        <h1 className="title">
-          Vision
-            </h1>
-        </Fade>
+        
     
+        <h1 className="title">
+        <Fade bottom cascade duration={500}>
+       Vision
+        </Fade>
+      </h1>
+
+
+
+
+
+
+
         <div className="container">
         <div className="row">
           <div className="col-md-6">

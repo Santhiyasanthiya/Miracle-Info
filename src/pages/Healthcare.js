@@ -8,7 +8,7 @@ const Healthcare = () => {
   return (
     <section className="aboutme" id="healthcare">
     <h1 className="title">
-      <Fade bottom cascade>
+      <Fade bottom cascade duration={500}>
       HEALTHCARE
       </Fade>
     </h1>

@@ -89,15 +89,16 @@ function Navbar() {
         </Link>
       </li>
 
-          <li className="nav-itemX">
-            <Link
-              to="/"
-              className="nav-linksX"
-              onClick={() => closeMobileMenu("#contact")}
-            >
-              Contact 
-            </Link>
-          </li>
+      <li className="nav-itemX">
+      <Link
+        to="/contact"
+        className="nav-linksX"
+        onClick={() => closeMobileMenu("#Contact")}
+      >
+        Contact
+      </Link>
+    </li>
+          
         </ul>
       </nav>
     </div>
