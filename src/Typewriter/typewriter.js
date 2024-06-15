@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 function TypeWriter() {
   return (
-    <div style={{color:"white"}}>
+    <div style={{color:"maroon"}}>
     <Typewriter 
       options={{
         strings: ["A company to connect PEOPLE "],

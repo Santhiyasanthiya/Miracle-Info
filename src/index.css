@@ -9,7 +9,17 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background: url('https://en.idei.club/uploads/posts/2023-06/1686191842_en-idei-club-p-artificial-intelligence-background-dizain-1.png');
+  /* background-color:#806262; */
+  /* background-color:rgb(78, 1, 8); */
+  /* background: url('https://t3.ftcdn.net/jpg/04/40/47/80/360_F_440478068_3epkyuEJf9itdwsgK4ZR5NWZ5PVIx1Yq.jpg'); */
+  background: url('https://4kwallpapers.com/images/wallpapers/ios-13-stock-ipados-red-black-background-amoled-hd-2880x1800-799.jpg');
+  /* background: url('https://img.freepik.com/premium-photo/elegant-dark-red-with-yellow-paper-layer-abstract-background_608068-6551.jpg'); */
+ 
+ 
+ 
+  /* filter: blur(20px); */
+
+ /* background-image: url('../src/Assets/background.jpeg'); */
   background-repeat: no-repeat;
   background-size: cover;
 }

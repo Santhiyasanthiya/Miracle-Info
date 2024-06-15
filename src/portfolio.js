@@ -1,15 +1,15 @@
 
-import logo from "./Assets/alphalogo.png"
-
+import logo from "./Assets/AlphaingenLogo.png"
+import logoanimi from "./Assets/logo.png"
 
 //I Would Highly Recommend You To Customize The Theme According To Your Taste.
 export const globalStyles = {
   
 
-    "--grad": "linear-gradient(315deg, rgba(12, 19, 54, 0.8), rgba(10, 205, 222, 0.8))", // Use gradients only
+    // "--grad": "linear-gradient(315deg, #8d6e63 ,#b71c1c", // Use gradients only
     // "--grad": "linear-gradient(315deg, #48a9fe 0%, #734ae8 74%)", // Use gradients only
-    // "--grad": "linear-gradient(315deg, #06bcfb 0%, #4884ee 74%)",
-    // "--grad": ' linear-gradient(blue,purple)',
+    // "--grad": "linear-gradient(315deg,#c62828 0%, #e53935 74%)",
+    "--grad": ' linear-gradient(-90deg,transparent,#ab003c)',
   '--b_color':"red",
  "--txtcolor": "#272341",
     "--p_color": "#00cdac",
@@ -18,13 +18,13 @@ export const globalStyles = {
 
 // Navigation Bar Name
 export const navbar_name = logo
-
-// Main Page
-export const main = {
-    name: "Alphaingen-Technology",
-    doamin: "A company to connect people with humanoids",
+export const logoanimation = logoanimi
+// --------------------------------------Main Page
+// export const main = {
+//     name: "Alphaingen-Technology",
+//     doamin: "A company to connect people with humanoids",
    
-}
+// }
 
 
 

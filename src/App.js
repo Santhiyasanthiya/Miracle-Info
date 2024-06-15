@@ -12,6 +12,7 @@ import ReactGA from "react-ga";
 import Healthcare from "./pages/Healthcare";
 import InformationTech from "./pages/InformationTech";
 import AiAr from "./pages/AiAr";
+import Footer from "./pages/Footer";
 ReactGA.initialize("UA-208216831-1");
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
       <AiAr />
       <Aboutme />
       <Contact />
+      <Footer />
     </div>
    
   );

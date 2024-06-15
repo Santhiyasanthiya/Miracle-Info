@@ -13,19 +13,15 @@ function Main() {
           <div className="row">
             <div className="col-lg-6 ">
               <div className="mobile">
-                <h1 className="main-title n" id="name">
-              <span style={{color:"orange"}}>Alphaingen</span>  <span style={{color:"white"}}>Technology</span>
-
-              <h3 className="type-writer"><TypeWriter /></h3>
-              </h1>
+            
 
               
               </div>
-              <Coder />
+          
             </div>
           
-            <div className="col-lg-5 ani">
-          
+            <div className="col-lg-6  ani">
+            <Coder />
             </div>
           </div>
         </Zoom>

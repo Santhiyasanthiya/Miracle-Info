@@ -14,13 +14,6 @@ const Whatido = () => {
        Vision
         </Fade>
       </h1>
-
-
-
-
-
-
-
         <div className="container">
         <div className="row">
           <div className="col-md-6">

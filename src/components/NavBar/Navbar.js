@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { navbar_name } from '../../portfolio';
+import {logoanimation} from "../../portfolio"
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 // import './Agustina.woff'
@@ -19,7 +20,9 @@ function Navbar() {
   return (
     <div>
       <nav className="navbarX sticky">
+      
         <a href="" className="navbar-logoX" onClick={closeMobileMenu}>
+      
         <img className='nav-logo' src={navbar_name} /> 
         </a>
         <div className="menu-iconX" onClick={handleClick}>
@@ -36,7 +39,7 @@ function Navbar() {
             </Link>
           </li>
        
-        
+      
 
    
           <li className="nav-itemX">

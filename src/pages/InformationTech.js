@@ -11,12 +11,16 @@ const InformationTech = () => {
     <section className="aboutme" id="infotech">
     <div className="row">
      
-          <h1 className="title text-center">
-          <Fade bottom cascade duration={800}>
-          Info Techno
-        </Fade>
           
-          </h1>
+        
+     <div className="container"> 
+     <Fade bottom cascade duration={800}>
+     <h1 className="title text-center"> Information Technology</h1> 
+     </Fade>
+     </div>
+     
+          
+      
         </div>
   
       <div className="container">

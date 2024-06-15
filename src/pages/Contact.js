@@ -1,56 +1,120 @@
+import React, { useEffect, useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import Zoom from "react-awesome-reveal";
+import logoname from '../Assets/logo-name.gif';
+import "./contact.css";
 
+const Contact = () => {
+  const [submissionStatus, setSubmissionStatus] = useState("");
 
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import './contact.css'; 
-import { links } from '../portfolio';
-import { Fade } from 'react-awesome-reveal';
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    },
+    validationSchema: Yup.object({
+      name: Yup.string()
+        .max(50, "Must be 50 characters or less")
+        .required("Required"),
+      email: Yup.string().email("Invalid email address").required("Required"),
+      message: Yup.string()
+        .max(500, "Must be 500 characters or less")
+        .required("Required"),
+    }),
+    onSubmit: async (values) => {
+      try {
+        const response = await fetch("http://localhost:4000/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
 
-const Footer = () => {
+        if (response.ok) {
+          setSubmissionStatus("Form submitted successfully!");
+          formik.resetForm();
+        } else {
+          setSubmissionStatus("Failed to submit the form. Please try again.");
+        }
+      } catch (error) {
+        setSubmissionStatus("An error occurred. Please try again.");
+      }
+    },
+  });
+
+  useEffect(() => {
+    const body = document.querySelector("#root");
+    body.scrollIntoView({ behavior: "smooth" }, 500);
+  }, []);
+
   return (
-    <footer className="footer" id="Contact">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="footer-content">
-
-            <Fade bottom cascade duration={500}>
-            <h2>Contact Us</h2>
-            </Fade>
-             
-
-
-              <div className='container-contact'>
-              <div className="contact-info">
-                <FontAwesomeIcon icon={faEnvelope} className="icon" />
-                <p>Email: <a
-                href="mailto:head@alphaingen.com"
-                target="_blank"
-             style={{color:"white"}} >
-              head@alphaingen.com
-              </a></p>
+    <div className="container">
+      <div className="row justify-content-center">
+        <div className="col-lg-8">
+          <div className="contatct-page" id="Contact">
+            <h1 className="title">Contact Us</h1>
+            <form onSubmit={formik.handleSubmit}>
+              <div className="mb-3">
+                <label htmlFor="name" className="form-label">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  name="name"
+                  {...formik.getFieldProps("name")}
+                />
+                {formik.touched.name && formik.errors.name && (
+                  <div className="text-danger">{formik.errors.name}</div>
+                )}
               </div>
-              <div className="contact-info">
-                <FontAwesomeIcon icon={faPhone} className="icon" />
-                <p  >Phone: <a
-                href="tel:+919445352946"
-                target="_blank"
-                style={{color:"white"}} >
-              +91 9445352946
-              </a></p>
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  name="email"
+                  {...formik.getFieldProps("email")}
+                />
+                {formik.touched.email && formik.errors.email && (
+                  <div className="text-danger">{formik.errors.email}</div>
+                )}
               </div>
+              <div className="mb-3">
+                <label htmlFor="message" className="form-label">
+                  Message
+                </label>
+                <textarea
+                  className="form-control"
+                  id="message"
+                  name="message"
+                  rows="3"
+                  {...formik.getFieldProps("message")}
+                ></textarea>
+                {formik.touched.message && formik.errors.message && (
+                  <div className="text-danger">{formik.errors.message}</div>
+                )}
               </div>
-            </div>
+              <button type="submit" className="btn btn-primary">
+                Submit
+              </button>
+              {submissionStatus && (
+                <div className="mt-3 alert alert-info">{submissionStatus}</div>
+              )}
+            </form>
           </div>
-          
         </div>
       </div>
-        
-
-    </footer>
+    </div>
   );
 };
 
-export default Footer;
-
+export default Contact;
