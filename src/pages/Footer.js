@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css"; // Import your Footer.css file
 import navbar_name from "../Assets/AlphaingenLogo.png";
+import { Fade } from "react-awesome-reveal";
 
 const Footer = () => {
   const [click, setClick] = useState(false);
@@ -19,8 +20,12 @@ const Footer = () => {
       <div className="container">
         <div className="row align-items-center">
        
-        <img src={navbar_name} alt="Logo" className='text-center' style={{height:"120px", maxWidth:"55%", margin:"0px auto"}}/>
+
+
+      <Fade direction="left" duration={3300}>
       
+      <img src={navbar_name} alt="Logo" className='text-center footer-logo'/>
+      </Fade>
         <br />
       <div className="row mt-4">
       <br />

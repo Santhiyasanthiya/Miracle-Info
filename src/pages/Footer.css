@@ -8,9 +8,11 @@
     margin-bottom: 20px;
 }
 .footer-logo{
-    height: 120px;
-    width: 820px;
-    margin-left: 20%;
+    height: 80px;
+    width: 370px;
+    background-image: linear-gradient(-150deg, rgb(145, 99, 99), white);
+   border-radius: 5px;
+/* margin-left: 20%; */
 }
 .footer-links ul, .contact-info ul {
     list-style: none;
