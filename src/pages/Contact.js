@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import Zoom from "react-awesome-reveal";
-import logoname from '../Assets/logo-name.gif';
 import "./contact.css";
 
 const Contact = () => {
@@ -12,7 +10,7 @@ const Contact = () => {
     initialValues: {
       name: "",
       email: "",
-      subject: "",
+    
       message: "",
     },
     validationSchema: Yup.object({
