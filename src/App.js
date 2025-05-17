@@ -1,48 +1,78 @@
 import React, { useEffect, useState } from "react";
+import Header from "./Components/HeaderPage/HeaderPage";
+import HomePage from "./Components/HomePage/HomePage";
+import AboutPage from "./Components/AboutPage/AboutPage";
+import HealthCare from "./Components/HealthCare/HealthCare";
+import FooterPage from "./Components/FooterPage/FooterPage";
+import ContactPage from "./Components/Contactpage/ContactPage";
+import Programme from "./Components/Programme/Programme";
+import PowerPractice from "./Components/PowerPractice/PowerPractice";
+import OurTraining from "./Components/OurTraining/OurTraining";
+import useGoogleAnalytics from "./useGoogleAnalytics";
+import EndrollPage from "./Components/EndrollPage/EndrollPage";
+import { Route, Router, Routes } from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import LogoHeader from "./Components/LogoHeader/LogoHeader";
 
-import Navbar from "./components/NavBar/Navbar";
-import "./App.css";
-import Main from "./pages/Main";
-import Aboutme from "./pages/Aboutme";
-import Whatido from "./pages/Whatido";
-import Contact from "./pages/Contact";
-import { globalStyles } from "./portfolio";
-import Loader from "./components/loaders/Loader";
-import ReactGA from "react-ga";
-import Healthcare from "./pages/Healthcare";
-import InformationTech from "./pages/InformationTech";
-import AiAr from "./pages/AiAr";
-import Footer from "./pages/Footer";
-ReactGA.initialize("UA-208216831-1");
 
-function App() {
-  const [loading, setLoading] = useState(true);
+const App = () => {
+  useGoogleAnalytics();
+  const [showHeader, setShowHeader] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+ 
 
-  const maincontent = (
-   
-    
+
+
+  return (
     <div>
-    <Navbar />
-    <Main />   
-      <Whatido />
-      <Healthcare/>
-      <InformationTech />
-      <AiAr />
-      <Aboutme />
-      <Contact />
-      <Footer />
-    </div>
-   
-  );
+      <Header/>
+  
+      <div id="home">
+        <HomePage />
+      </div>
 
-  return <div style={globalStyles}>{loading ? <Loader /> : maincontent}</div>;
-}
+
+
+      <div>
+        <PowerPractice />
+      </div>
+
+      <br /><br /><br /><br /><br /><br />
+
+      <div id="programme">
+        <Programme />
+      </div>
+
+      <br /><br />
+      <OurTraining />
+      <br /><br />
+
+      <div id="whychoose">
+        <HealthCare />
+      </div>
+
+    
+<br/>
+<br/>
+<br/>
+      <div id="endroll">
+        <EndrollPage />
+      </div>
+
+      <div>
+        <FooterPage />
+      </div>
+
+
+
+ 
+      <Routes >
+     
+        <Route path="/contact" element={<ContactPage />} /> 
+      </Routes>
+
+    </div>
+  );
+};
 
 export default App;

@@ -1,0 +1,100 @@
+/* Fullscreen container */
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Default height */
+  overflow: hidden;
+}
+
+/* Background video styling */
+.homepage-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .home-container {
+    height: 70vh;
+  }
+  .homepage-background-video {
+    height: 70vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-container {
+    height: 70vh;
+  }
+  .homepage-background-video {
+    height: 70vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-container {
+    height: 70vh;
+  }
+  .homepage-background-video {
+    height: 70vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    height: 60vh;
+  }
+  .homepage-background-video {
+    height: 60vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-container {
+    height: 50vh;
+  }
+  .homepage-background-video {
+    height: 50vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-container {
+    height: 60vh;
+  }
+  .homepage-background-video {
+    height: 60vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .home-container {
+    height: 60vh;
+  }
+  .homepage-background-video {
+    height: 60vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .home-container {
+    height: 60vh;
+  }
+  .homepage-background-video {
+    height: 60vh;
+    width: 100vw;
+  }
+}

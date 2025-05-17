@@ -1,0 +1,414 @@
+.programme-container {
+  padding: 40px 20px;
+  animation: spinBackground 10s linear infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  margin-top: -80px;
+  /* z-index: 1; */
+
+
+}
+/* Background animation */
+@keyframes spinBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.programme-page-main-heading {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.8rem;
+  text-align: center;
+  background: linear-gradient(90deg, #c25180, #410a13, #ff6f61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgb(43, 1, 8);
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+
+    transform: translateY(-10px);
+  }
+  100% {
+  
+    transform: translateY(0);
+  }
+}
+
+
+
+
+  .programme-container-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 50px;
+
+}
+ 
+.programme-page-column {
+  padding: 20px;
+  line-height: 1.6;
+  color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; 
+  font-family: 'ChristmasTwinkle';
+  border-radius: 5px;
+ opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  flex: 1; 
+  height: 350px;
+  min-width: 350px; 
+  margin: 15px;
+  background: url('https://www.iberdrola.com/documents/20125/42118/lifelong_746x419.jpg/a68d1b8c-dda1-2dff-27f3-20d5d0a2d30c?t=1630558685791') no-repeat center center fixed;
+  background-size:cover;
+
+}
+
+.programme-page-column-second {
+  padding: 20px;
+  line-height: 1.6;
+  color: #000000;
+  font-family: 'ChristmasTwinkle';
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; 
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  flex: 1; 
+  height: 350px;
+  min-width: 350px; 
+  margin: 15px;
+  background: url('https://img.freepik.com/free-vector/digital-technology-engineering-digital-telecoms-concept-futuristic-technology-background-vector-illustration_587448-1058.jpg?semt=ais_hybrid') no-repeat center center fixed;
+  background-size:cover;
+
+}
+
+
+
+
+
+
+.programme-page-para{
+  margin-top: 50px;
+ font-size: 22px;
+  text-align: justify;
+  backdrop-filter: blur(2px); /* Blurs the background */
+  -webkit-backdrop-filter: blur(8px);
+}
+  
+  .programme-page-column:nth-child(2) {
+    animation-delay: 0.5s; /* Second box comes in slightly later */
+  }
+  
+  /* Fade-in Up Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .learning-button, .service-button {
+    background-color: #410a13;
+    color: #fac6fa; 
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Zoom effect */
+  .learning-button:hover, .service-button:hover {
+    transform: scale(1.1);
+
+  }
+  
+
+
+  
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .popup-content {
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    backdrop-filter: blur(2px) brightness(100%);
+    background: rgba(255, 255, 255, 0.3); /* Light transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+
+  }
+  
+/* Prevent background scroll when popup is open */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1200px and below - Large screens */
+@media (max-width: 1200px) {
+  .programme-page-column,
+  .programme-page-column-second {
+    min-width: 300px;
+    height: auto;
+  }
+
+  .programme-container {
+    padding: 30px 15px;
+  }
+}
+
+
+@media (min-width: 750px) and (max-width: 991px) {
+  .programme-container-page .col-lg-6 {
+    width: 45% !important;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .programme-page-para {
+    font-size: 10px;
+    
+  }
+  .learning-button, .service-button {
+    background-color: #410a13;
+    color: #fac6fa; 
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+}
+
+
+
+
+
+/* 992px and below - Medium desktops/laptops */
+@media (max-width: 992px) {
+  .programme-page-column,
+  .programme-page-column-second {
+    flex: 1 1 5%;
+    margin: 10px;
+  }
+
+  .programme-page-para {
+    font-size: 20px;
+    margin-top: 80px;
+  }
+
+  .popup-content {
+    width: 90%;
+  }
+}
+
+/* 768px and below - Tablets */
+@media (max-width: 768px) {
+  .programme-page-column,
+  .programme-page-column-second {
+    flex: 1 1 100%;
+    min-width: 100%;
+    height: auto;
+  }
+
+  .programme-container-page {
+display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+
+  .programme-page-main-heading {
+    font-size: 2.2rem;
+  }
+
+  .programme-page-para {
+    font-size: 18px;
+    margin-top: 60px;
+  }
+
+  .learning-button,
+  .service-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+/* 576px and below - Mobile phones */
+@media (max-width: 576px) {
+  .programme-page-main-heading {
+    font-size: 1.8rem;
+  }
+
+  .programme-page-para {
+    font-size: 16px;
+  }
+
+  .popup-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .programme-container {
+    padding: 20px 10px;
+  }
+
+  .learning-button,
+  .service-button {
+    font-size: 15px;
+    padding: 8px 14px;
+  }
+}
+
+/* 425px and below - Small phones */
+@media (max-width: 425px) {
+  .programme-page-main-heading {
+    font-size: 1.6rem;
+  }
+
+  .programme-page-para {
+    font-size: 15px;
+  }
+
+  .programme-page-column,
+  .programme-page-column-second {
+    margin: 10px 0;
+  }
+
+  .learning-button,
+  .service-button {
+    font-size: 14px;
+  }
+}
+
+/* 375px and below - Very small phones */
+@media (max-width: 375px) {
+  .programme-page-main-heading {
+    font-size: 1.4rem;
+  }
+
+  .programme-page-para {
+    font-size: 14px;
+    margin-top: 50px;
+  }
+
+  .popup-content {
+    padding: 12px;
+  }
+
+  .learning-button,
+  .service-button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+/* 300px and below - Mini devices */
+@media (max-width: 300px) {
+  .programme-page-main-heading {
+    font-size: 1.2rem;
+  }
+
+  .programme-page-para {
+    font-size: 13px;
+  }
+
+  .learning-button,
+  .service-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .popup-content {
+    width: 95%;
+    font-size: 14px;
+  }
+}
+
+
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .col-lg-6 {
+      font-size: 16px;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col-lg-6 {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+  

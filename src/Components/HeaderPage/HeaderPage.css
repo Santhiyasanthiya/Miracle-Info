@@ -1,0 +1,134 @@
+/* Base styles */
+.headerPage {
+  background-image: linear-gradient(to right, rgb(252, 182, 217), rgb(240, 166, 210));
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.headerPage-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* Navigation */
+.headerPage-nav-links {
+  display: flex;
+  gap: 80px;
+  margin: 10px auto;
+  list-style: none;
+}
+/* Logo size */
+.logo-image {
+  width: 125px;
+  height: auto;
+}
+
+.headerPage-nav-links button {
+  background: none;
+  border: none;
+  color: #610404;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.headerPage-nav-links button:hover {
+  color: #ffffff;
+  transform: scale(1.15);
+  text-shadow: 2px 2px 5px rgba(71, 2, 45, 0.5);
+}
+
+/* Menu Icon */
+.headerPagemenu-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  font-size: 2rem;
+  color: rgb(66, 2, 2);
+  cursor: pointer;
+  height: 30px;
+}
+
+.headerPagemenu-icon:hover {
+color: rgb(71, 3, 3);
+  text-shadow: 1px 1px 6px rgba(255, 0, 170, 0.8);
+}
+
+
+
+
+
+
+
+/* Below 900px: Show menu icon, hide full nav */
+@media (max-width: 870px) {
+  .headerPage-nav-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 15px;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(247, 205, 248), rgb(247, 140, 204));
+    padding: 15px;
+    border-radius: 10px;
+    gap: 12px;
+  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 170px;
+    /* z-index: 999; */
+  }
+
+  .headerPage-nav-links.open {
+    display: flex;
+  }
+
+  .headerPage-nav-links button {
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .headerPagemenu-icon {
+    display: block;
+  }
+}
+
+/* Extra tuning for small phones */
+@media (max-width: 600px) {
+  .headerPage-nav-links {
+    top: 58px;
+    width: 150px;
+    right: 10px;
+  }
+
+  .headerPage-nav-links button {
+    font-size: 0.9rem;
+  }
+
+  .headerPagemenu-icon {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .headerPage-nav-links {
+    top: 50px;
+    width: 130px;
+  }
+
+  .headerPage-nav-links button {
+    font-size: 0.8rem;
+  }
+
+  .headerPagemenu-icon {
+    font-size: 1.4rem;
+  }
+}
